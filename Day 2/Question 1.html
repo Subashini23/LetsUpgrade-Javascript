@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("QUESTION 1");
+        let s = prompt("Enter the string");
+        let a = prompt("Enter the character to search");
+        console.log("The string is "+ s);
+        console.log("The character is "+ a);
+        let ans = s.search(a);
+        if(ans == -1){
+            console.log("Character is not found");
+        }
+        else{
+            console.log("Character is present at "+ans);
+        }
+    </script>
+</body>
+</html>
