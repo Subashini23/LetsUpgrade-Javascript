@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form{
+        background-color:darkgray;
+        width : 50%;
+        height : 500px;
+        padding : 30px;
+        
+    }
+    .table
+    {
+        padding : 10px;
+        margin-top: 20px;
+        font-size: 90%;
+        width : 100%;
+    }
+    th,td{
+        text-align: center;
+    }
+    .searchName,.searchCity{
+        height: 30px;
+        padding:5px;
+        text-align: center;
+    }
+    h1
+    {
+        text-align: center;
+        text-decoration:underline;
+    }
+</style>
+<body>
+ 
+    <div class = "form">
+    <h1>EMPLOYEES</h1>
+    <input type ="text" placeholder ="Enter name to search" class = "searchName" onkeyup="search()" />
+    <input type ="text" placeholder ="Enter city to search" class = "searchCity" onkeyup="search()" />
+    <table class = "table" border="1" cellspacing = "0">
+       <thead> <tr>
+        <th> SNo </th>
+        <th> Name</th>
+        <th> Age </th>
+        <th> City </th>
+        <th> Salary </th>
+        <th> Delete </th>
+        </tr></thead>
+        <tbody class="tablebody"></tbody>
+    </table>
+    </div>
+    <script src = "project1.js"></script>
+</body>
+</html>

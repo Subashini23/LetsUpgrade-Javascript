@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form{
+        background-color:darkgray;
+        width : 50%;
+        height : 100vh;
+        padding : 30px;
+        
+    }
+    .table
+    {
+        padding : 10px;
+        margin-top: 20px;
+        font-size: 90%;
+        width : 100%;
+    }
+
+    th,td{
+        text-align: center;
+    }
+    h1
+    {
+        text-align: center;
+        text-decoration:underline;
+    }
+    .submit{
+        padding:20px;
+    }
+    .searchSource,.searchDestination{
+        height: 30px;
+        padding:5px;
+        text-align: center;
+        display: inline-block;
+    }
+</style>
+<body>
+    <div class="form">
+    <h1>BUS STATIONS</h1>
+    <form  class = "submit" onsubmit="submitData(event)">
+    <input type ="text" required placeholder ="Enter bus name" id = "name" />
+    <input type ="text" required placeholder ="Enter source point" id = "source" />
+    <input type ="text" required placeholder ="Enter destination point" id = "destination" />
+    <input type ="text" required placeholder ="Enter bus number" id = "number" />
+    <input type ="number" required placeholder ="Enter passenger capacity" id = "passenger" />
+    <button type="submit">Add bus</button>
+    </form>
+    <input type ="text" placeholder ="Enter source to search" class = "searchSource" onkeyup="search()" />
+    <input type ="text" placeholder ="Enter destination to search" class = "searchDestination" onkeyup="search()" />
+    <table class = "table" border="1" cellspacing = "0">
+        <thead> <tr>
+         <th> SNo </th>
+         <th> Name </th>
+         <th> Source </th>
+         <th> Destination </th>
+         <th> Number </th>
+         <th> Passenger capacity </th>
+         <th> Actions </th>
+         </tr></thead>
+         <tbody class="tablebody"></tbody>
+     </table>
+     </div>
+    <script src = "project2.js"></script>
+</body>
+</html>
